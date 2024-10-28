@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+button {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.claro {
+    background-color: rgb(229, 229, 229);
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.escuro {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.azul {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.sessao2 {
+    margin-left: 20px;
+    background-color: rgb(253, 116, 116);
+    width: 300px;
+    border-radius: 10px;
+}
+
+.modoEscuro {
+    background-color: rgb(58, 58, 58);
+    color: white;
+
+}
+.modoClaro {
+    background-color: rgb(225, 225, 225);
+    color: black;
+}
