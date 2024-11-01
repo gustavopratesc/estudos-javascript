@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 007 JS</title>
+</head>
+<body>
+    <h1>Exercicio 007 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        const pi = 3.14159
+        let raio = window.prompt('Qual é o raio do circulo?')
+        // Math.pow(raio, 2) <-- eleva raio ao quadrado
+        let area = pi * Math.pow(raio, 2)
+
+        document.querySelector("#resultado").innerText = `O resultado de area é: ${area}`
+
+    </script>
+</body>
+</html>

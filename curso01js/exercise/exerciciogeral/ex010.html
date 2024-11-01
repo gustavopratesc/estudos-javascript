@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 010 JS</title>
+</head>
+<body>
+    <h1>Exercicio 10 JS</h1>
+
+    <h2 id="resultado"></h2>
+    <script>
+        const respostaCerta = "azul"
+        let resposta = window.prompt('Qual é minha cor favorita?:')
+        if (resposta.toLowerCase() === respostaCerta) {
+            document.querySelector('#resultado').innerText = `A resposta esta certa!!`
+        } else {
+            document.querySelector('#resultado').innerText = `A resposta esta errada!!`
+        }
+
+    </script>
+</body>
+</html>

@@ -12,14 +12,24 @@
 
         let numero = window.prompt('Insira um número para a surpresa: ')
 
-        let maior = numero > 10
-        let menor = numero < 10
-        let igual = numero == 10
+        //let maior = numero > 10
+        //let menor = numero < 10
+        //let igual = numero == 10
 
+        if (numero > 10) {
+            window.alert(`O número ${numero} é maior que dez`)
+        }else if (numero < 10) {
+            window.alert(`O número ${numero} é menor que dez`)
+        }else {
+            window.alert(`O número ${numero} é == a dez`)
+        }
+
+        /*
         window.alert(`O resultado foi: 
         O número inserido é maior que 10?${maior}  
         O número inserido é menor que 10?${menor}
         O número insero é igual a 10?${igual}`)
+        */
 
 
 

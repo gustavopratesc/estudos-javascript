@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 009 JS</title>
+</head>
+<body>
+    <h1>Exercicio 009 JS</h1>
+
+    <script>
+
+    let media = parseFloat(window.prompt('Digite sua nota para ver se foi aprovado!'));
+
+    if (media > 100) {
+        window.alert("Sua nota não existe");
+    } else if (media >= 90 && media <= 100) {
+        window.alert(`Aprovado com excelência! Sua nota foi ${media}`);
+    } else if (media >= 70 && media <= 89) {
+        window.alert(`Aprovado! Sua nota foi ${media}`);
+    } else if (media >= 50 && media <= 69) {
+        window.alert(`Recuperação. Sua nota foi ${media}`);
+    } else if (media < 50) {
+        window.alert(`Reprovado. Sua nota foi ${media}`);
+    }
+
+    </script>
+</body>
+</html>

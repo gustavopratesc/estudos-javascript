@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 006 JS</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 87vh;
+        }
+        form {
+            width: 150px;
+            
+        }
+        .botaonum {
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>EX006 Calculadora Basica</h1>
+
+    <input type="number" id="numero1" placeholder="Digite o primeiro número">
+    <input type="number" id="numero2" placeholder="Digite o segundo número">
+
+    <button onclick="somar()">+</button>
+    <button onclick="subtrair()">-</button>
+    <button onclick="multiplicar()">*</button>
+    <button onclick="dividir()">/</button>
+
+    <p id="resultado"></p>
+
+    <script src="ex006.js"></script>
+</body>
+</html>
