@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 011 JS</title>
+</head>
+<body>
+    <h1>Exercicio 011 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        let celsius = parseFloat(window.prompt('Digite uma temperatura em celsius para ser convertida em Fahrenheit.'))
+
+        let fahrenheit = celsius * 1.8 + 32
+        
+        document.querySelector('#resultado').innerHTML = `O resultado é ${fahrenheit}`
+
+
+
+    </script>
+</body>
+</html>
