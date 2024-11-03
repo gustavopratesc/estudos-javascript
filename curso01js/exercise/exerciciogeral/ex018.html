@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 018 em JS</title>
+</head>
+<body>
+    <h1>Exercicio 018 em JS Descubra a palavra</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        let palavra = String(window.prompt("Insira uma palavra"))
+
+        if (palavra.charAt(0) === "A" || palavra.charAt(0) === "a") {
+            document.querySelector("#resultado").innerHTML = `Acertou`
+        } else {
+            document.querySelector("#resultado").innerHTML = `Errou`
+        }
+
+    </script>
+</body>
+</html>

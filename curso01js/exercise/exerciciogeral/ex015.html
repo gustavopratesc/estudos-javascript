@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 015 JS</title>
+</head>
+<body>
+    <h1>Exercicio 015 JS</h1>
+
+
+    <p id="resultado"></p>
+
+    <script>
+
+        let anoNascimento = parseInt(window.prompt('Insira seu ano de nascimento.'))
+        let anoAtual = parseInt(window.prompt('Insira o ano atual.'))
+
+        idadeAtual = anoAtual - anoNascimento
+
+        document.querySelector("#resultado").innerHTML = `Você nasceu no ano de ${anoNascimento}, e atualmente no ano de ${anoAtual} você possui ${idadeAtual} anos. `
+
+    </script>
+</body>
+</html>

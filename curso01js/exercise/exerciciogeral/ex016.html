@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 016 JS</title>
+</head>
+<body>
+    <h1>Exercicio 016 JS</h1>
+
+    <p id="resultado"></p>
+    <script>
+
+       /*let nota = parseFloat(window.prompt("Digite sua nota"))
+
+        if (nota >= 8) {
+            document.querySelector("#resultado").innerHTML = `Parabens você tirou mais que 8`
+        } else {
+            document.querySelector("#resultado").innerHTML = `A nota esta abaixo de 8. Reprovado`
+        }*/
+
+        let nota1 = parseFloat(window.prompt("Insira sua primeira nota"))
+        let nota2 = parseFloat(window.prompt("Insira sua segunda nota"))
+        let nota3 = parseFloat(window.prompt("Insira sua terceira nota"))
+        let nota4 = parseFloat(window.prompt("Insira sua quarta nota"))
+
+        let media = (nota1 + nota2 + nota3 + nota4) / 4
+
+        if (media >= 6) {
+            document.querySelector("#resultado").innerHTML = `Aprovado.`
+        } else {
+            document.querySelector("#resultado").innerHTML = `Reprovado.`
+        }
+
+
+    </script>
+</body>
+</html>

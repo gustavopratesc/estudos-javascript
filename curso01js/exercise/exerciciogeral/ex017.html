@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 017 JS</title>
+</head>
+<body>
+    <h1>Exercicio 017 JS Conversor de Dólar para real</h1>
+    <p id="resultado"></p>
+
+    <script>
+
+        let dolar = parseFloat(window.prompt("Insira algum valor em Dólar"))
+        let taxaCambio = 5.87
+
+        let real = dolar * taxaCambio
+
+        document.querySelector("#resultado").innerHTML = `O valor inserido em reais fica: R$${real.toFixed(2)}`
+
+
+
+
+
+    </script>
+</body>
+</html>
