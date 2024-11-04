@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 024 JS</title>
+</head>
+<body>
+    <h1>Exercicio 024 JS Operadores</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        window.alert("CALCULADORA DE ADIÇÃO")
+        let primeiroNumero = parseFloat(window.prompt("Escolha o primeiro número"))
+        let segundoNumero = parseFloat(window.prompt("Escolha o segundo número"))
+
+        let resultadoSoma = primeiroNumero + segundoNumero
+
+        document.querySelector("#resultado").innerHTML = `O resultado da soma entre ${primeiroNumero} e ${segundoNumero} é igual a ${resultadoSoma}`
+
+        /*
+                window.alert("CALCULADORA DE ADIÇÃO");
+
+                let primeiroNumero = parseFloat(window.prompt("Escolha o primeiro número"));
+                if (isNaN(primeiroNumero)) {
+                document.querySelector("#resultado").innerHTML = "Por favor, insira um número válido.";
+                } else {
+                let segundoNumero = parseFloat(window.prompt("Escolha o segundo número"));
+                if (isNaN(segundoNumero)) {
+                document.querySelector("#resultado").innerHTML = "Por favor, insira um número válido.";
+                } else {
+                let resultadoSoma = primeiroNumero + segundoNumero;
+                document.querySelector("#resultado").innerHTML = `O resultado da soma entre ${primeiroNumero} e ${segundoNumero} é igual a ${resultadoSoma}`;
+            }
+        }
+        */
+
+    </script>
+</body>
+</html>

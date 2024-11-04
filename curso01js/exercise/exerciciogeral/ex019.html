@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 019 JS</title>
+</head>
+<body>
+    <h1>Exercicio 019 JS</h1>
+
+    <p id="resultado"></p>
+    <script>
+
+        let nome = String(window.prompt("Insira um nome:"))
+
+        if (nome.length >= 5 ) {
+                  document.querySelector("#resultado").innerHTML = `Nome grande ${nome} ${nome.length} caracteres`
+        } else {
+                  document.querySelector("#resultado").innerHTML = `Nome Pequeno ${nome} ${nome.length} caracteres`
+        }
+    </script>
+</body>
+</html>

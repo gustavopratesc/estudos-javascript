@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 031 JS</title>
+</head>
+<body>
+    <h1>Exercicio 031 JS</h1>
+
+    <script>
+        /*
+        8. Operador NOT
+        Crie um programa que pergunte ao usuário se ele quer continuar (responda com "sim" ou "não").
+        Use o operador lógico ! para exibir uma mensagem inversa ao que o usuário respondeu.
+        */
+        let resposta = window.prompt("Você quer continuar? (Responda com 'SIM' ou 'NÃO')")
+
+        // Verifica se a resposta é "sim" ou "SIM"
+        let querContinuar = (resposta === "SIM" || resposta === "sim")
+
+        // Inverte o valor usando o operador !
+        if (!querContinuar) {
+            window.alert("Você escolheu continuar!")
+        } else {
+            window.alert("Você escolheu não continuar.")
+        }
+    </script>
+</body>
+</html>

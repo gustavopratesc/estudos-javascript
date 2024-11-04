@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 029 JS</title>
+    <style>
+        #resultado {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 029 JS</h1>
+
+    <p id="resultado"></p>
+    <script>
+
+        window.alert("Insira dois números e para verificar se ambos são positivos")
+        let primeiroNumero = parseFloat(window.prompt("Primeiro número"))
+        let segundoNumero = parseFloat(window.prompt("Segundo número"))
+
+        if (isNaN(primeiroNumero) || isNaN(segundoNumero)) {
+            window.alert("Insira um número valido")
+        } else if (primeiroNumero > 0 && segundoNumero > 0) {
+            document.querySelector("#resultado").innerHTML = `Ambos são positivos`
+        } else {
+            document.querySelector("#resultado").innerHTML = `Um ou ambos os números não são positivos`
+        }
+    </script>
+</body>
+</html>

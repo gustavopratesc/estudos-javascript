@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 033 JS</title>
+    <style>
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 033 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+        /*
+        Peça ao usuário o primeiro nome e o sobrenome e, em seguida, exiba o nome completo usando concatenação de strings. Utilize o operador + para unir os dois nomes em uma única frase.
+        */
+        let nome = String(window.prompt("Digite o seu nome:"))
+        let sobrenome = String(window.prompt("Digite seu sobrenome"))
+
+        document.querySelector("#resultado").innerHTML = "Seu nome é " + nome + " " + sobrenome
+
+    </script>
+</body>
+</html>

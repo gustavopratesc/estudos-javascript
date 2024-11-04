@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 021 JS</title>
+    <style>
+        p {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 021 JS</h1>
+
+    
+    <p id="resultado"></p>
+    <script>
+
+        const verificacao = "Verificação de números positivos e negativos!"
+        window.alert(verificacao)
+
+        let numero = parseInt(window.prompt("Insira algum número, pode ser negativo ou positivo"));
+
+        if (isNaN(numero)) {
+            window.alert("Por favor, insira um número válido!")
+        } else if (numero > 0) {
+            document.querySelector("#resultado").innerHTML = `O número é positivo!`
+        } else if (numero < 0) {
+            document.querySelector("#resultado").innerHTML = `O número é negativo!`
+        } else {
+            document.querySelector("#resultado").innerHTML = `O número é zero!`
+        }
+
+
+
+    </script>
+</body>
+</html>

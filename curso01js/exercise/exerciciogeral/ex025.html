@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 025 JS</title>
+</head>
+<body>
+    <h1>Exercicio 025 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+        window.alert("Comparação de números maior e menor")
+        
+        let primeiroNumero = parseFloat(window.prompt("Escolha o primeiro número"))
+        let segundoNumero = parseFloat(window.prompt("Escolha o segundo número"))
+
+        if (isNaN(primeiroNumero) || isNaN(segundoNumero)) {
+            document.querySelector("#resultado").innerHTML = `Escolha um número valido`
+        } else if (primeiroNumero > segundoNumero) {
+            document.querySelector("#resultado").innerHTML = `O primeiro número escolhido ${primeiroNumero} é maior que o segundo número ${segundoNumero}`
+        } else {
+            document.querySelector("#resultado").innerHTML = `O segundo número escolhido ${segundoNumero} é maior que o primeiro número ${primeiroNumero}`
+        }
+
+
+    </script>
+</body>
+</html>

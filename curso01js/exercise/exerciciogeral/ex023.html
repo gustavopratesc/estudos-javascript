@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 023 JS</title>
+    <style>
+        #resultado {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 023 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+        
+        window.alert("Insira uma palavra!")
+        let palavra = String(window.prompt("Insira uma palavra para contar quantos caracteres."))
+
+        document.querySelector("#resultado").innerHTML = `A quantidade de caracteres dessa palavra é ${palavra.length}`
+
+    </script>
+</body>
+</html>

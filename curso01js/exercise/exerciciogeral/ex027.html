@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 027 JS</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 027 JS</h1>
+    <h2>Calculadora Desconto</h2>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        window.alert("Calculadora de desconto")
+        let valorOriginal = parseFloat(window.prompt("Digite o preço do produto"))
+        let desconto = parseFloat(window.prompt("Digite o desconto escolhido"))
+
+        let valorFinal = valorOriginal * (1 - (desconto / 100));
+
+        document.querySelector("#resultado").innerHTML = `O valor com desconto fica ${valorFinal.toFixed(2)}`
+
+    </script>
+</body>
+</html>

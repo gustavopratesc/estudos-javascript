@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 022 JS</title>
+</head>
+<body>
+    <h1>Exercicio 022 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        window.alert('Insira a largura e a altura do retangulo para descobrir a area')
+        let largura = parseFloat(window.prompt("Largura:"))
+        let altura = parseFloat(window.prompt("Altura:"))
+
+        let area = largura * altura
+
+        document.querySelector("#resultado").innerHTML = `O resultado da área é = ${area.toFixed(2)}`
+
+    </script>
+</body>
+</html>

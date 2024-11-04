@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 028 JS</title>
+</head>
+<body>
+    <h1>Exercicio 028 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+
+        window.alert("Verificação de idade para obter carteira de motorista")
+        let idade = parseInt(window.prompt("Insira sua idade"))
+
+        if (isNaN(idade) || idade < 0)  {
+            window.alert("Escolha uma idade valida")
+        } else if (idade >= 18) {
+            document.querySelector("#resultado").innerHTML = `Você ja esta com idade suficiente para tirar a carteira de motorista.`
+        } else {
+            document.querySelector("#resultado").innerHTML = `Você não esta com idade suficiente!!`
+        }
+
+    </script>
+</body>
+</html>
