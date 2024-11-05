@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 035 JS</title>
+</head>
+<body>
+    <h1>Exercicio 035 JS</h1>
+
+    <p id="resultado"></p>
+    
+    <script>
+        /* 2. Conversor de Horas para Minutos
+            Crie um programa que peça ao usuário uma quantidade de horas e converta o valor em minutos. Exiba o resultado na tela.  */
+
+        window.alert("Conversor de horas para minutos")
+        let horas = parseFloat(window.prompt("Escolha a hora"))
+        let minutos = 60 * horas
+        
+        document.querySelector("#resultado").innerHTML = `A hora ${horas} em minutos fica ${minutos}`
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 036 JS</title>
+</head>
+<body>
+    <h1>Exercicio 036 JS</h1>
+    <p id="resultado"></p>
+
+    <script>
+        /* 3. Verificador de Divisibilidade
+        Peça ao usuário um número e verifique se ele é divisível por 5 ou por 3. Exiba mensagens específicas para cada caso (por exemplo, “Divisível por 5”, “Divisível por 3” ou “Não é divisível por 5 nem por 3”).*/
+        window.alert("Verificador de Divisibilidade")
+        let numero = parseFloat(window.prompt("Insira um número que possa ser divisivel por 5 e 3"))
+
+        if (isNaN(numero)) {
+            window.alert("Escolha um número valido")
+        }  else if (numero % 5 === 0 && numero % 3 === 0) {
+            window.alert("O número é divisível por 5 e por 3")
+        }
+        else if (numero % 5 === 0) {
+            window.alert("O número é divisivel por 5")
+        } else if (numero % 3 === 0) {
+            window.alert("O número é divisivel por 3")
+        } else {
+            window.alert("Não é divisivel nem por 5 nem por 3")
+        }
+
+    </script>
+</body>
+</html>

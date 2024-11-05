@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 037</title>
+</head>
+<body>
+    <h1>Exercicio 037 JS</h1>
+    <p id="resultado"></p>
+    <h2>Contador de Vogais</h2>
+
+    <script>
+        // Passo 1: Solicita uma palavra ao usuário
+           let palavra = prompt("Digite uma palavra:");
+
+        // Passo 2: Define as vogais e inicializa o contador
+            const vogais = "aeiou";
+            let contador = 0;
+
+        // Passo 3: Percorre cada caractere da palavra
+            for (let i = 0; i < palavra.length; i++) {
+        // Passo 4: Verifica se o caractere é uma vogal
+                if (vogais.includes(palavra[i].toLowerCase())) {
+                    contador++; // Incrementa o contador se for uma vogal
+                }
+            }
+
+        // Passo 5: Exibe o resultado
+            document.getElementById("resultado").innerHTML = `A palavra "${palavra}" contém ${contador} vogais.`;
+
+
+    
+    </script>
+</body>
+</html>

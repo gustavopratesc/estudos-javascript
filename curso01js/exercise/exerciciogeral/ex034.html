@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 034 JS</title>
+    <style>
+        #resultado {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio 034 JS</h1>
+
+    <p id="resultado"></p>
+
+    <script>
+        /* 
+            1. Calculadora de Potência
+            Peça ao usuário uma base e um expoente, e exiba o resultado da base elevada ao expoente.
+        */
+        window.alert("Calculadora de Potencia")
+        let base = parseFloat(window.prompt("Escolha uma base"))
+        let expoente = parseFloat(window.prompt("Escolha um expoente"))
+
+        // ou let resultado = base ** expoente
+        let resultado = Math.pow(base, expoente)
+
+        document.querySelector("#resultado").innerHTML = `O resultado da potência é ${resultado}`
+
+    </script>
+</body>
+</html>
