@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 003</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header, main {
+            font-size: 20px;
+        }
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: lightgray;
+        }
+        nav > ul {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        nav > ul > li > a {
+            text-decoration: none;
+        }
+        #sobre {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+        }
+        #sobre > img {
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            border-radius: 20px;
+        }
+        #serviços {
+            background-color: orange;
+            color: rgb(0, 101, 22);
+            padding: 20px;
+        }
+        #serviços > ul {
+            background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+        footer {
+            background-color: black;
+            color: white;
+            padding: 30px;
+            margin-top: 50px;
+            position: absolute;
+            bottom: 0;
+        }
+        footer > ul {
+            margin-top: 15px;
+        }
+        footer ul > li {
+            margin-top: 5px;
+        }
+        footer ul li > a {
+            color: white;
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo a sei la quantas paginas web minha</h1>
+        <nav>
+            <ul type="none">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#serviços">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <h2>Sobre mim</h2>
+            <p>Meu nome é Gustavo e estou revisando assuntos de Front end para lembrar me especializar</p>
+            <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/8/c/0/5/8c0582e8aac56416cbeabbf536a3c3f0.jpg" alt="sonic foto de perfil">
+        </section>
+        <section id="serviços">
+            <ul type="none">
+                <li>Desenvolvimento de WebSites</li>
+                <li>Design Responsivo</li>
+                <li>Otimização de perfomance</li>
+            </ul>
+        </section>
+        <section class="contato">
+            <form action="post">
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail">
+                <label for="itexto">Texto para contato</label>
+                <input type="text" name="texto" id="itexto">
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gustavo. Todos direitos reservados.</p>
+        <ul type="none" class="contatofooter">
+            <li><a href=""><img src="../images/instagram.png" style="height: 20px; width: 20px;" alt="instagram">Instagram</a></li>
+            <li><a href=""><img src="../images/whatsapp.png" alt="whatsapp" style="height: 20px;">whatsapp</a></li>
+            <li><a href=""><img src="../images/github.png" alt="github" style="height: 20px; background-color: white;">github</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
