@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(255, 226, 215);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+/* CONFIGURAÇÕES HEADER */
+
+header {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 200px 40px 200px;
+    border-radius: 4px;
+    display: flex;
+    flex-flow: column wrap;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.597);
+}
+header > h1 {
+    text-align: center;
+    color: rgb(148, 40, 0);
+}
+.sessãoIngredientes {
+    margin: 10px;
+}
+.sessãoIngredientes > p {
+    text-align: center;
+}
+.modoDeFazer {
+    margin: 10px;
+}
+/* Configurações Main */
+
+main {
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+}
+#projetos {
+    background-color: green;
+    border-radius: 5px;
+    margin: 25px 200px 25px 200px;
+    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+#projetos > h2 {
+    margin-bottom: 15px;
+}
+.sobremim {
+    background-color: white;
+    color: black;
+    padding: 20px;
+        
+}
+.sobremim > h2, p, img {
+    margin-left: 20px;
+}
+.sobremim > p {
+    margin-bottom: 5px;
+}
+.fotoPerfil {
+    height: 300px;
+    
+}
+/* Configurações de Contato */
+
+.contato {
+    padding: 200px;
+    background-color: rgb(175, 156, 156);
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+.contato > form {
+    display: flex;
+    flex-flow: column wrap;
+    width: 500px;
+    
+}
